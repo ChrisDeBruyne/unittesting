@@ -1,12 +1,21 @@
 package be.tvh.courses.testing;
 
 public class SpaceShip {
-    public Object getTacticalStation() {
-        return null;
+
+    private TacticalStation tacticalStation;
+    private OperationsStation operationsStation;
+
+    public SpaceShip(TacticalStation tacticalStation, OperationsStation operationsStation) {
+        this.tacticalStation = tacticalStation;
+        this.operationsStation = operationsStation;
     }
 
-    public Object getOperationsStation() {
-        return null;
+    public TacticalStation getTacticalStation() {
+        return tacticalStation;
+    }
+
+    public OperationsStation getOperationsStation() {
+        return operationsStation;
     }
 
     public void doSelfCheck() {
